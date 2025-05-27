@@ -441,3 +441,26 @@ body {
     padding: 0.5rem 0;
   }
 }
+
+/* Center content inside .container for About section */
+.about-section .container {
+  text-align: center;
+}
+
+/* Profile picture style */
+.profile-pic {
+  width: 206px;
+  height: 206px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* About details text aligns left but centered container */
+.about-details {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
