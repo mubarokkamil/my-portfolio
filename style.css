@@ -312,3 +312,132 @@ body {
     gap: 1rem;
   }
 }
+
+/* Responsive Enhancements */
+@media (max-width: 1024px) {
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .home-section {
+    padding: 3rem 1.5rem;
+    height: auto;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+    animation: none;
+    width: 100%;
+    border: none;
+    white-space: normal;
+  }
+
+  .about-details {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .contact-details {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .home-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+  }
+
+  .about-section h2,
+  .projects-section h2,
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Hamburger base styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    z-index: 999;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 0.5rem 0;
+  }
+}
